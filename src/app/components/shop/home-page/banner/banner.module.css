@@ -1,0 +1,31 @@
+.bg-custom-image {
+  /* background-image: url("https://welovebrandings.spreadagency.co.nz/public/assets/images/sliders/1649144403banner1.jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+}
+/* @media (min-width: 425px) {
+  .bg-custom-image {
+    background-size: contain;
+    ;
+  }
+} */
+
+.bg-custom-image.from-category-page{
+  height: 350px;
+  background-image: url("https://api-dev.wlb.spreadagency.co.nz/static/home_page/sliders/wlb_home-banner_1.jpg");
+  background-position: center 20%;
+}
+
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* CSS class for fade-out transition */
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}

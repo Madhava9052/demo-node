@@ -1,0 +1,64 @@
+/* CSS or SCSS */
+.custom-radio {
+  /* Increase the size of the outer circle */
+  width: 20px;
+  height: 20px;
+  /* Hide the default radio button */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* Use a yellow background for the inner circle */
+  background-color: yellow;
+  /* Create the outer circle */
+  border: 2px solid #000;
+  border-radius: 50%;
+  /* Position the inner circle */
+  position: relative;
+}
+
+/* Style the inner circle (dot) */
+.custom-radio::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+/* Show the inner circle when the radio button is checked */
+.custom-radio:checked::before {
+  display: block;
+}
+
+.select-box{
+  position: relative;
+}
+
+select{
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari and Chrome */
+  appearance: none;
+  padding: 0 12px;
+  border-radius: 4px;
+  border: 1px solid #00000033;
+  outline: none;
+}
+
+.select-box::after{
+  content: '';
+  position: absolute;
+  z-index: 1;
+  width: 12px;
+  height: 12px;
+  border-right: 1px solid #53565B;
+  border-bottom: 1px solid #53565B;
+  transform: rotate(45deg);
+  right: 12px;
+  top: 58%;
+  pointer-events: none;
+}

@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/*theme color ========> bg-[#8A1E41] */
+/*transition and duration =========> transition duration-300 */
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge, and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    scroll-behavior: smooth;
+  }
+}
+
+.remove-arrow::-webkit-inner-spin-button,
+.remove-arrow::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.remove-arrow {
+  -moz-appearance: textfield;
+}
+
+.no-spinners {
+  -moz-appearance: textfield;
+}
+
+.no-spinners::-webkit-outer-spin-button,
+.no-spinners::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.custom-radio {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid #53565B;
+  padding: 0.6rem;
+  margin-right: 5px;
+  background: transparent;
+  position: unset !important;
+}
+
+/* Hide the default radio button */
+.custom-radio-parent input[type="radio"] {
+  display: none;
+}
+
+/* Style the custom radio button when selected */
+input[type="radio"]:checked+span.custom-radio {
+  background-color: white;
+  border: 2px solid #FFCD00;
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="radio"]:checked+span.custom-radio .innerColor {
+  min-width: 13px;
+  min-height: 13px;
+  background-color: #FFCD00;
+  display: flex;
+  color: #FFCD00;
+  border-radius: 100%
+}
+
+/* Style the scrollbar */
+::-webkit-scrollbar {
+  width: .5rem;
+  height: .15rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #b1b4b7;
+  border-radius: 5px;
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track:active {
+  background-color: transparent !important;
+}
+
+/* Custom styles for the Swiper scrollbar */
+.swiper-scrollbar-drag {
+  background-color: #8A1E41 !important; 
+}
+
+.simplebar-scrollbar::before {
+  background-color: #646465 !important;
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
