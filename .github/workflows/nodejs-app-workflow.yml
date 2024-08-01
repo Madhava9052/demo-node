@@ -15,7 +15,7 @@ jobs:
       - name: Create .env file
         run: |
           echo "NEXT_PUBLIC_BASE_URL" = ${{ secrets.NEXT_PUBLIC_BASE_URL }} >> .env
-          echo "NEXT_PUBLIC_DOMAIN_URL" = ${{ secrets.NEXT_PUBLIC_DOMAIN_URL }  >> .env
+          echo "NEXT_PUBLIC_DOMAIN_URL" = ${{ secrets.NEXT_PUBLIC_DOMAIN_URL }}  >> .env
           echo "NEXT_PUBLIC_GOOGLE_PLACE_KEY" = ${{ secrets.NEXT_PUBLIC_GOOGLE_PLACE_KEY }} >> .env
           echo "NEXT_PUBLIC_PAGINATION_OFFSET_COUNT" = ${{ secrets.NEXT_PUBLIC_PAGINATION_OFFSET_COUNT }} >> .env
           echo "NEXT_PUBLIC_PHONE_NUMBER_LENGTH" = ${{ secrets.NEXT_PUBLIC_PHONE_NUMBER_LENGTH }} >> .env
